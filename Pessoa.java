@@ -43,6 +43,21 @@ public class Pessoa{
     public void ExcluirHorarios(){
         //excluir horarios para os médicos, caso um médico não possa atender em x horario.
     }
+    public void CadastrarMedico(){
+        //cadastrar um médico novo
+    }
+    public void CadastrarPaciente(){
+        //cadastrar um paciente novo
+    }
+    public void ExcluirMedico(){
+        //excluir o cadastro de um medico ja registrado
+        //lembrar de excluir todos os dados e anotações feitas pelo médico
+    }
+    public void ExcluirPaciente(){
+        //excluir o cadastro de um paciente ja registrado
+        //lembrar de excluir todass as anotações acerca do paciente feita pelo(s) medico(s)
+        //apagar os horarios que a pessoa marcou
+    }
 
 
     //construtor
@@ -67,8 +82,30 @@ public class Pessoa{
     }
     //setters
     public void SetNome(String nome){
-
+        this.nome = nome;
     }
+    public void SetCpf(int cpf){
+        this.cpf = cpf;
+    }
+    public void SetEmail(String email){
+        this.email = email;
+    }
+    public void SetSenha(String senha){
+        this.senha = senha;
+    }
+
+
+
+    ///////////////getters e setters medico//////////////////
+    public void SetCRM(int CRM){
+        this.CRM = CRM;
+    }
+    public void SetEspecialidade(String especialidade){
+        this.especialidade = especialidade;    
+    }
+
+    ///////////////getters e setters paciente//////////////////
+    
 
 
 
